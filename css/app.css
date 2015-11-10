@@ -1,0 +1,386 @@
+/*
+Flower Gallery Website custom CSS 
+*********************************
+Content 
+*********************************
+1. Body 
+2. Heder Menu 
+3. Slider Section
+4. Sidebar
+5. Gallery Section
+*********************************
+Color schem
+*********************************
+text color, toggle text, gamburger color, title - #ffffff;
+Background, link bg - #2ecc71;
+link bg:hover, link bg (<940) - #27b061; 
+h1 small - #3f3f3f;
+slider border, slider_buttons, top-bar bg(<940px) - #2C3E50;
+h1 small (<940px) - #f5f5f5;
+ */
+/********************************
+1. Body
+ ********************************/
+body {
+  background: #2ecc71;
+  color: #222;
+  cursor: auto;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+/*********************************
+2. Header Menu
+**********************************/
+/*top-bar background color*/
+.top-bar {
+    background: #2ecc71;
+    height: 2.8125rem;
+    line-height: 2.8125rem;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative; }
+/*top-bar-menu h1 small text color*/
+h1 small {
+    color: #3f3f3f;
+    font-size: 60%;
+    line-height: 0;
+}
+/*top-bar links background color*/
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+      background: #2ecc71;
+      color: #FFFFFF;
+      line-height: 2.8125rem;
+      padding: 0 0.9375rem; }
+/*top-bar links background color on hover */
+.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+        background: #27b061;
+        color: #FFFFFF; }
+/*top-bar on devices with screen less then 940px*/
+@media only screen and (max-width: 40em) {
+.top-bar .button, .top-bar button {
+  position: relative;
+  top: -1px; } 
+/*Change background color of top-bar links and add border for <940px*/
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+  background: #27b061;
+  border-bottom: 2px solid #2C3E50;}
+/*Change text color of top-bar small text for <940px*/
+h1 small {
+  color: #f5f5f5;} }
+/*Top-bar background clolor for <940px*/
+.top-bar.expanded .title-area {
+  background: #2C3E50; }
+/*Top-bar toggle menu color for <940px*/
+.top-bar.expanded .toggle-topbar a {
+  color: #fff; }
+/*Gamburger color*/
+.top-bar.expanded .toggle-topbar a span::after {
+  box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff; }
+
+/*********************************
+3. Slider Section
+**********************************/
+
+/*slider border color, slider long shadow*/
+.flower-slider {
+  border: 6px solid #2C3E50;
+  box-shadow: rgb(36, 161, 89) 1px 1px,
+    rgb(36, 161, 89) 2px 2px,
+    rgb(36, 161, 89) 3px 3px,
+    rgb(36, 161, 89) 4px 4px,
+    rgb(36, 161, 89) 5px 5px,
+    rgb(36, 161, 89) 6px 6px,
+    rgb(36, 161, 89) 7px 7px,
+    rgb(36, 161, 89) 8px 8px,
+    rgb(36, 161, 89) 9px 9px,
+    rgb(36, 161, 89) 10px 10px,
+    rgb(36, 161, 89) 11px 11px,
+    rgb(36, 161, 89) 12px 12px,
+    rgb(36, 161, 89) 13px 13px,
+    rgb(36, 161, 89) 14px 14px,
+    rgb(36, 161, 89) 15px 15px,
+    rgb(36, 161, 89) 16px 16px,
+    rgb(36, 161, 89) 17px 17px,
+    rgb(36, 161, 89) 18px 18px,
+    rgb(36, 161, 89) 19px 19px,
+    rgb(36, 161, 89) 20px 20px,
+    rgb(36, 161, 89) 21px 21px,
+    rgb(36, 161, 89) 22px 22px,
+    rgb(36, 161, 89) 23px 23px,
+    rgb(36, 161, 89) 24px 24px,
+    rgb(36, 161, 89) 25px 25px,
+    rgb(36, 161, 89) 26px 26px,
+    rgb(36, 161, 89) 27px 27px,
+    rgb(36, 161, 89) 28px 28px,
+    rgb(36, 161, 89) 29px 29px,
+    rgb(36, 161, 89) 30px 30px,
+    rgb(36, 161, 89) 31px 31px,
+    rgb(36, 161, 89) 32px 32px,
+    rgb(36, 161, 89) 33px 33px,
+    rgb(36, 161, 89) 34px 34px,
+    rgb(36, 161, 89) 35px 35px,
+    rgb(36, 161, 89) 36px 36px,
+    rgb(36, 163, 90) 37px 37px,
+    rgb(37, 165, 91) 38px 38px,
+    rgb(37, 168, 93) 39px 39px,
+    rgb(38, 170, 94) 40px 40px,
+    rgb(38, 172, 95) 41px 41px,
+    rgb(39, 175, 97) 42px 42px,
+    rgb(39, 177, 98) 43px 43px,
+    rgb(40, 180, 99) 44px 44px,
+    rgb(41, 182, 101) 45px 45px,
+    rgb(41, 184, 102) 46px 46px,
+    rgb(42, 187, 103) 47px 47px,
+    rgb(42, 189, 105) 48px 48px,
+    rgb(43, 192, 106) 49px 49px,
+    rgb(43, 194, 107) 50px 50px,
+    rgb(44, 196, 109) 51px 51px,
+    rgb(44, 199, 110) 52px 52px,
+    rgb(45, 201, 111) 53px 53px,
+    rgb(46, 204, 113) 54px 54px;
+  margin: 2rem 3rem;
+  margin-bottom: 3.5rem; 
+  max-width: 800px;
+  max-height: 600px; 
+}
+/*Slick slider center align */
+@media only screen and (min-width: 1280px) {
+.flower-slider {
+  float:none;
+  display: inline-block; }
+#sliderSection {
+text-align: center;} }
+/*slider buttons color*/
+.slick-prev:before,
+.slick-next:before
+{
+  color: #2C3E50;
+}
+/**********************************
+4. Sidebar
+***********************************/
+/*Sidebar border, margin and bg gradient*/
+#sideBlock {
+  border-left: 1px solid #239854;
+  margin-top: 2rem;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2ecc71+0,27ae60+0,27ae60+35,27ae60+61,2989d8+100,207cca+100,27ae60+100,27ae60+100&amp;0+0,0.98+42 */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI3YWU2MCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM1JSIgc3RvcC1jb2xvcj0iIzI3YWU2MCIgc3RvcC1vcGFjaXR5PSIwLjgyIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQyJSIgc3RvcC1jb2xvcj0iIzI3YWU2MCIgc3RvcC1vcGFjaXR5PSIwLjk4Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjYxJSIgc3RvcC1jb2xvcj0iIzI3YWU2MCIgc3RvcC1vcGFjaXR5PSIwLjk4Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyN2FlNjAiIHN0b3Atb3BhY2l0eT0iMC45OCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  rgba(39,174,96,0) 0%, rgba(39,174,96,0.82) 35%, rgba(39,174,96,0.98) 42%, rgba(39,174,96,0.98) 61%, rgba(39,174,96,0.98) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(39,174,96,0)), color-stop(35%,rgba(39,174,96,0.82)), color-stop(42%,rgba(39,174,96,0.98)), color-stop(61%,rgba(39,174,96,0.98)), color-stop(100%,rgba(39,174,96,0.98))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(39,174,96,0) 0%,rgba(39,174,96,0.82) 35%,rgba(39,174,96,0.98) 42%,rgba(39,174,96,0.98) 61%,rgba(39,174,96,0.98) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(39,174,96,0) 0%,rgba(39,174,96,0.82) 35%,rgba(39,174,96,0.98) 42%,rgba(39,174,96,0.98) 61%,rgba(39,174,96,0.98) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(39,174,96,0) 0%,rgba(39,174,96,0.82) 35%,rgba(39,174,96,0.98) 42%,rgba(39,174,96,0.98) 61%,rgba(39,174,96,0.98) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(39,174,96,0) 0%,rgba(39,174,96,0.82) 35%,rgba(39,174,96,0.98) 42%,rgba(39,174,96,0.98) 61%,rgba(39,174,96,0.98) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0027ae60', endColorstr='#fa27ae60',GradientType=0 ); /* IE6-8 */
+  }
+/*sidebar padding*/
+.middle-header {
+  padding: 2rem 0;
+}
+/*Sidebar grid*/
+.sidebar {
+  display: inline-block;
+  background-color: #34495e; }
+/*Sidebar title*/
+.sidebar h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800; }
+/*Sidebar subtitle*/
+  .sidebar h2 {
+    font-weight: 300;
+    color: #2C3E50; 
+    padding: 1rem 0;}
+/*Sidebar title and subtitle adjustment*/
+@media only screen and (min-width: 640px) {
+  .sidebar h1 {
+    font-size: 1em; }
+  .sidebar h2 {
+    font-size: 1em; 
+    pa}
+  .middle-header {
+    padding: 1rem 0;}
+}
+@media only screen and (min-width: 750px) {
+  .sidebar h1 {
+    font-size: 1.2em; }
+  .sidebar h2 {
+    font-size: 1.2em; }
+  .middle-header {
+    padding: 1.2rem 0;}
+}
+@media only screen and (min-width: 820px) {
+  .sidebar h1 {
+    font-size: 1.3em; }
+  .sidebar h2 {
+    font-size: 1.3em; }
+}
+@media only screen and (min-width: 905px) {
+  .sidebar h1 {
+    font-size: 1.5em; }
+  .sidebar h2 {
+    font-size: 1.5em; }
+}
+@media only screen and (min-width: 980px) {
+  .sidebar h1 {
+    font-size: 1.8em; }
+  .sidebar h2 {
+    font-size: 1.8em; }
+}
+@media only screen and (min-width: 1113px) {
+  .sidebar h1 {
+    font-size: 2em; }
+  .sidebar h2 {
+    font-size: 2em; }
+}
+@media only screen and (min-width: 1224px) {
+  .sidebar h1 {
+    font-size: 2.3em; }
+  .sidebar h2 {
+    font-size: 2.3em; }
+}
+/*********************************
+5. Gallery Section
+**********************************/
+
+#gallerySection, #aboutSection, #contactsSection, .footer  {
+  background-color: #2C3E50;
+  background-image: url('../img/bg.jpg');
+  border-top: 4px solid #239854; }
+
+#gallerySection h1, #aboutSection h1, #contactsSection h1, .footerTitle {
+  color: #2ecc71;
+  font-weight: 800;
+}
+#gallerySection h2 {
+  color: #2ecc71;
+  font-weight: 300;
+  border-bottom: 2px solid #2ecc71;
+}
+ 
+ ul>li>img {
+  border: 3px solid #fff;
+  border-radius: 3px;
+ }
+button.success, .button.success {
+  background-color: #2ecc71;
+  border-color: #27b061;
+  color: #FFFFFF; }
+button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
+  background-color: #27b061; }
+
+  #aboutSection p {
+    color: #f2f2f2;
+    font-size: 2em;
+  }
+@media only screen and (max-width: 1224px) {
+  #aboutSection p {
+    font-size: 1.5em;}
+  }
+  @media only screen and (max-width: 640px) {
+  #aboutSection p {
+    font-size: 1em;
+  }
+}
+  /*******************************************/
+  .footer {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 1rem; }
+
+  .footer .social a {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-color: #27b061;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 2rem;
+    margin: 0 3px 0 0; }
+    
+  .footer .copywrite {
+    color: #8f9296;
+    font-size: 0.875rem;
+    margin: 1rem 0 1rem 0; }
+
+  .footer .footer-form textarea, .footer .footer-form input {
+    border-radius: 3px;
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    font: inherit;
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #2cab5e;
+    padding: 1.3rem; }
+
+  .footer .footer-form label {
+    color: #2ecc71;
+    font-size: 2.2rem;
+    margin: 0 0 1rem 0;
+    font-weight: 800; }
+
+  .footer .footer-form .submit {
+    border-radius: 3px;
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: 0;
+    padding: 1rem 3.5rem;
+    font-weight: bold;
+    float: right;
+    margin: 0 1rem 2rem 0; }
+
+  .footer .footer-links a {
+    list-style: none;
+    font-weight: normal;
+    color: #fff;
+    padding: 3rem 0 2rem;
+    margin: 0;
+    font-size: 1.875rem; }
+
+    .footer .footer-links a:hover {
+     color: #27b061;
+      -webkit-transition: all 1s ease-out 0.5s;
+      -moz-transition: all 1s ease-out 0.5s;
+      -o-transition: all 1s ease-out 0.5s;
+      transition: all 1s ease-out 0.5s; }
+
+    .footer .footer-links a::after {
+      content: "•";
+      color: #27b061;
+      padding: 0 0.2rem 0 0.4rem; }
+
+    .footer .footer-links a:last-child::after {
+      content: "";
+      padding: 0 0.4rem 0 0.8rem; }
+  @media only screen and (min-width: 40.063em) {
+    .footer {
+      padding: 4rem; }
+      .footer p {
+        text-align: left; }
+      .footer .social {
+        text-align: left;
+        margin: 0; }
+      .footer .footer-form .contact {
+        position: absolute;
+        left: -45%;
+        top: 10%; } }
+@media only screen and (max-width: 1300px) {
+  .footer .footer-form .contact {
+    left: -60%; }
+  }
+@media only screen and (max-width: 1005px) {
+  .footer .footer-form .contact {
+    left: -80%;
+    top: -80%;
+  }
+}
